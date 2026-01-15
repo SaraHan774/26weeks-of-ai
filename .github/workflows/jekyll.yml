@@ -36,6 +36,13 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - name: List built files
+        run: |
+          echo "Contents of _site directory:"
+          find _site -type f -name "*.html" | sort
+          echo "---"
+          ls -R _site/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
