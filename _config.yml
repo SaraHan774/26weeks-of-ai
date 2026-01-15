@@ -11,7 +11,7 @@ email: your-email@example.com
 
 # Jekyll 빌드 설정
 markdown: kramdown
-theme: minima
+# theme: minima  # Disabled to allow custom layouts for collections
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
