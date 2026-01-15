@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3"
 
 # 기본 테마
-gem "minima", "~> 2.5"
+# gem "minima", "~> 2.5"  # Disabled - using custom layouts
 
 # Jekyll 플러그인
 group :jekyll_plugins do
