@@ -2,8 +2,8 @@
 title: 26주 LLM 학습 여정
 description: >-
   Claude, Copilot 같은 LLM이 어떻게 텍스트를 이해하고 생성하는지 원리 파악하기
-baseurl: "" # GitHub Pages 사용시 /repository-name 형식
-url: "" # https://username.github.io 형식
+baseurl: "/26weeks-of-ai" # GitHub Pages 사용시 /repository-name 형식
+url: "https://sarahan774.github.io" # https://username.github.io 형식
 
 # 블로그 정보
 author: Gahee
