@@ -27,6 +27,14 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
 
+      - name: List source files
+        run: |
+          echo "Listing _week* directories:"
+          ls -la _week* || echo "No _week directories found"
+          echo "---"
+          echo "Checking _config.yml collections:"
+          grep -A 5 "^collections:" _config.yml || echo "No collections found in _config.yml"
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
