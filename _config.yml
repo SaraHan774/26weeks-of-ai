@@ -1,0 +1,301 @@
+# Jekyll 블로그 설정
+title: 26주 LLM 학습 여정
+description: >-
+  Claude, Copilot 같은 LLM이 어떻게 텍스트를 이해하고 생성하는지 원리 파악하기
+baseurl: "" # GitHub Pages 사용시 /repository-name 형식
+url: "" # https://username.github.io 형식
+
+# 블로그 정보
+author: Gahee
+email: your-email@example.com
+
+# Jekyll 빌드 설정
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Kramdown 설정
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Collections 설정 (주차별 학습 내용)
+collections:
+  week1:
+    output: true
+    permalink: /week1/:title/
+  week2:
+    output: true
+    permalink: /week2/:title/
+  week3:
+    output: true
+    permalink: /week3/:title/
+  week4:
+    output: true
+    permalink: /week4/:title/
+  week5:
+    output: true
+    permalink: /week5/:title/
+  week6:
+    output: true
+    permalink: /week6/:title/
+  week7:
+    output: true
+    permalink: /week7/:title/
+  week8:
+    output: true
+    permalink: /week8/:title/
+  week9:
+    output: true
+    permalink: /week9/:title/
+  week10:
+    output: true
+    permalink: /week10/:title/
+  week11:
+    output: true
+    permalink: /week11/:title/
+  week12:
+    output: true
+    permalink: /week12/:title/
+  week13:
+    output: true
+    permalink: /week13/:title/
+  week14:
+    output: true
+    permalink: /week14/:title/
+  week15:
+    output: true
+    permalink: /week15/:title/
+  week16:
+    output: true
+    permalink: /week16/:title/
+  week17:
+    output: true
+    permalink: /week17/:title/
+  week18:
+    output: true
+    permalink: /week18/:title/
+  week19:
+    output: true
+    permalink: /week19/:title/
+  week20:
+    output: true
+    permalink: /week20/:title/
+  week21:
+    output: true
+    permalink: /week21/:title/
+  week22:
+    output: true
+    permalink: /week22/:title/
+  week23:
+    output: true
+    permalink: /week23/:title/
+  week24:
+    output: true
+    permalink: /week24/:title/
+  week25:
+    output: true
+    permalink: /week25/:title/
+  week26:
+    output: true
+    permalink: /week26/:title/
+
+# Collections 기본 설정
+defaults:
+  - scope:
+      path: ""
+      type: "week1"
+    values:
+      layout: "post"
+      phase: "Phase 1: Python과 기초 체력"
+      week: "Week 1"
+  - scope:
+      path: ""
+      type: "week2"
+    values:
+      layout: "post"
+      phase: "Phase 1: Python과 기초 체력"
+      week: "Week 2"
+  - scope:
+      path: ""
+      type: "week3"
+    values:
+      layout: "post"
+      phase: "Phase 1: Python과 기초 체력"
+      week: "Week 3"
+  - scope:
+      path: ""
+      type: "week4"
+    values:
+      layout: "post"
+      phase: "Phase 1: Python과 기초 체력"
+      week: "Week 4"
+  - scope:
+      path: ""
+      type: "week5"
+    values:
+      layout: "post"
+      phase: "Phase 2: 딥러닝 기초"
+      week: "Week 5"
+  - scope:
+      path: ""
+      type: "week6"
+    values:
+      layout: "post"
+      phase: "Phase 2: 딥러닝 기초"
+      week: "Week 6"
+  - scope:
+      path: ""
+      type: "week7"
+    values:
+      layout: "post"
+      phase: "Phase 2: 딥러닝 기초"
+      week: "Week 7"
+  - scope:
+      path: ""
+      type: "week8"
+    values:
+      layout: "post"
+      phase: "Phase 2: 딥러닝 기초"
+      week: "Week 8"
+  - scope:
+      path: ""
+      type: "week9"
+    values:
+      layout: "post"
+      phase: "Phase 2: 딥러닝 기초"
+      week: "Week 9"
+  - scope:
+      path: ""
+      type: "week10"
+    values:
+      layout: "post"
+      phase: "Phase 3: 자연어 처리 기초"
+      week: "Week 10"
+  - scope:
+      path: ""
+      type: "week11"
+    values:
+      layout: "post"
+      phase: "Phase 3: 자연어 처리 기초"
+      week: "Week 11"
+  - scope:
+      path: ""
+      type: "week12"
+    values:
+      layout: "post"
+      phase: "Phase 3: 자연어 처리 기초"
+      week: "Week 12"
+  - scope:
+      path: ""
+      type: "week13"
+    values:
+      layout: "post"
+      phase: "Phase 3: 자연어 처리 기초"
+      week: "Week 13"
+  - scope:
+      path: ""
+      type: "week14"
+    values:
+      layout: "post"
+      phase: "Phase 3: 자연어 처리 기초"
+      week: "Week 14"
+  - scope:
+      path: ""
+      type: "week15"
+    values:
+      layout: "post"
+      phase: "Phase 4: Transformer 깊이 파기"
+      week: "Week 15"
+  - scope:
+      path: ""
+      type: "week16"
+    values:
+      layout: "post"
+      phase: "Phase 4: Transformer 깊이 파기"
+      week: "Week 16"
+  - scope:
+      path: ""
+      type: "week17"
+    values:
+      layout: "post"
+      phase: "Phase 4: Transformer 깊이 파기"
+      week: "Week 17"
+  - scope:
+      path: ""
+      type: "week18"
+    values:
+      layout: "post"
+      phase: "Phase 4: Transformer 깊이 파기"
+      week: "Week 18"
+  - scope:
+      path: ""
+      type: "week19"
+    values:
+      layout: "post"
+      phase: "Phase 4: Transformer 깊이 파기"
+      week: "Week 19"
+  - scope:
+      path: ""
+      type: "week20"
+    values:
+      layout: "post"
+      phase: "Phase 4: Transformer 깊이 파기"
+      week: "Week 20"
+  - scope:
+      path: ""
+      type: "week21"
+    values:
+      layout: "post"
+      phase: "Phase 5: 현대 LLM의 비밀"
+      week: "Week 21"
+  - scope:
+      path: ""
+      type: "week22"
+    values:
+      layout: "post"
+      phase: "Phase 5: 현대 LLM의 비밀"
+      week: "Week 22"
+  - scope:
+      path: ""
+      type: "week23"
+    values:
+      layout: "post"
+      phase: "Phase 5: 현대 LLM의 비밀"
+      week: "Week 23"
+  - scope:
+      path: ""
+      type: "week24"
+    values:
+      layout: "post"
+      phase: "Phase 5: 현대 LLM의 비밀"
+      week: "Week 24"
+  - scope:
+      path: ""
+      type: "week25"
+    values:
+      layout: "post"
+      phase: "Phase 5: 현대 LLM의 비밀"
+      week: "Week 25"
+  - scope:
+      path: ""
+      type: "week26"
+    values:
+      layout: "post"
+      phase: "Phase 5: 현대 LLM의 비밀"
+      week: "Week 26"
+
+# 제외할 파일
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache
+  - .git
+  - .vscode

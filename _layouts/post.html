@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      <span class="phase-badge">{{ page.phase }}</span>
+      <span class="week-badge">{{ page.week }}</span>
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.date %}
+    <p class="post-date">{{ page.date | date: "%Y년 %m월 %d일" }}</p>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    {% include navigation.html %}
+  </footer>
+</article>

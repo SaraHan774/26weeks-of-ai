@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h1>{{ page.title }}</h1>
+
+  {{ content }}
+
+  <div class="weeks-grid">
+    {% assign phases = "1,2,3,4,5" | split: "," %}
+    {% for phase in phases %}
+      {% assign phase_num = phase | plus: 0 %}
+      <section class="phase-section">
+        {% case phase_num %}
+          {% when 1 %}
+            <h2>Phase 1: Python과 기초 체력 (1-4주)</h2>
+            {% assign weeks = "1,2,3,4" | split: "," %}
+          {% when 2 %}
+            <h2>Phase 2: 딥러닝 기초 (5-9주)</h2>
+            {% assign weeks = "5,6,7,8,9" | split: "," %}
+          {% when 3 %}
+            <h2>Phase 3: 자연어 처리 기초 (10-14주)</h2>
+            {% assign weeks = "10,11,12,13,14" | split: "," %}
+          {% when 4 %}
+            <h2>Phase 4: Transformer 깊이 파기 (15-20주)</h2>
+            {% assign weeks = "15,16,17,18,19,20" | split: "," %}
+          {% when 5 %}
+            <h2>Phase 5: 현대 LLM의 비밀 (21-26주)</h2>
+            {% assign weeks = "21,22,23,24,25,26" | split: "," %}
+        {% endcase %}
+
+        <div class="week-cards">
+          {% for week in weeks %}
+            {% assign week_name = "week" | append: week %}
+            {% assign week_posts = site[week_name] %}
+            <div class="week-card">
+              <h3>Week {{ week }}</h3>
+              {% if week_posts.size > 0 %}
+                <ul class="post-list">
+                  {% for post in week_posts %}
+                    <li>
+                      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% else %}
+                <p class="no-posts">아직 작성된 글이 없습니다</p>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endfor %}
+  </div>
+</div>
