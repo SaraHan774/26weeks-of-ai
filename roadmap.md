@@ -3,15 +3,7 @@ layout: default
 title: Learning Roadmap
 ---
 
-# 26주 LLM 학습 로드맵
-
-> **목표**: Claude, Copilot 같은 LLM이 어떻게 텍스트를 이해하고 생성하는지 원리 파악
-> **대상**: 비전공 안드로이드 개발자 (5년차, 수학 약함)
-> **시간**: 주 10시간 (출퇴근 2시간/일 + 주말 3-4시간)
-
----
-
-## 📊 학습 여정 시각화
+# 학습 여정
 
 <div class="mermaid">
 graph TD
@@ -67,7 +59,7 @@ graph TD
   <strong>💡 학습 흐름:</strong> Python 기초 → 딥러닝 원리 → NLP 기초 → Transformer 구조 → 현대 LLM 이해
 </div>
 
----
+<br/><br/>  
 
 ## Phase 1: Python과 기초 체력 (1-4주)
 
@@ -78,7 +70,7 @@ graph TD
 | 3 | 수학 직관 잡기 | 수식을 "읽을 수 있는" 수준으로 | 벡터(방향과 크기), 행렬(변환 표현), 미분(변화율) | NumPy로 벡터 덧셈, 행렬 곱셈 시각화 |
 | 4 | 신경망 감 잡기 | "학습한다"는 게 뭔지 직관적 이해 | 퍼셉트론, 손실 함수, 경사하강법 | 순수 NumPy로 AND, OR 게이트 학습 |
 
----
+<br/><br/>  
 
 ## Phase 2: 딥러닝 기초 (5-9주)
 
@@ -90,7 +82,7 @@ graph TD
 | 8 | CNN 맛보기 | 이미지 처리 신경망 원리 | 컨볼루션, 풀링 | CNN으로 MNIST 99% 달성 |
 | 9 | 중간 점검 | 1-8주 복습, 빈 곳 채우기 | 전체 개념 연결 | "신경망 학습 원리" 설명글 작성 |
 
----
+<br/><br/>  
 
 ## Phase 3: 자연어 처리 기초 (10-14주)
 
@@ -102,7 +94,7 @@ graph TD
 | 13 | Seq2Seq | 문장→문장 변환 구조 | Encoder-Decoder, Teacher forcing | 영어→한글 날짜 형식 변환기 |
 | 14 | Attention 등장 | Transformer 이전 혁신 이해 | Query/Key/Value, Attention 가중치 | Attention 가중치 히트맵 시각화 |
 
----
+<br/><br/>  
 
 ## Phase 4: Transformer 깊이 파기 (15-20주)
 
@@ -115,7 +107,7 @@ graph TD
 | 19 | GPT vs BERT | Decoder-only vs Encoder-only | GPT(왼→오, 생성), BERT(양방향, 이해) | Hugging Face로 BERT, GPT-2 비교 |
 | 20 | 중간 복습 | Transformer 완전 정복 확인 | 전체 아키텍처 연결 | "Transformer 작동 원리" 10분 발표자료 |
 
----
+<br/><br/>  
 
 ## Phase 5: 현대 LLM과 실무 역량 (21-26주)
 
@@ -130,7 +122,7 @@ graph TD
 | 25 | RAG + MCP 서버 | 검색 증강 + 컨텍스트 엔지니어링 | Constitutional AI, RAG, **MCP** | MCP 서버 구축 (AI가 내 DB 읽게 하기) |
 | 26 | LLM-as-a-Judge + 총정리 | 자동화된 평가 + 회고 | **LLM-as-a-Judge**, 테스트 자동화 | AI 코드 검증 자동화 + 블로그 포스트 |
 
----
+<br/><br/>  
 
 ## 🎯 Phase별 핵심 개념
 
@@ -200,7 +192,7 @@ mindmap
   <strong>📌 학습 전략:</strong> 각 Phase는 이전 Phase의 개념을 기반으로 쌓아 올립니다. 기초를 탄탄히 다진 후 다음 단계로 넘어가세요.
 </div>
 
----
+<br/><br/>  
 
 ## 핵심 질문
 
@@ -214,7 +206,7 @@ mindmap
 | 4 | 15-20주 | "왜 층을 깊이 쌓으면 더 복잡한 패턴을 잡아낼까?" |
 | 5 | 21-26주 | "왜 같은 모델인데 프롬프트에 따라 결과가 달라지지?" |
 
----
+<br/><br/>  
 
 ## 학습 팁
 
@@ -225,7 +217,7 @@ mindmap
 | 시간 배분 | 평일 출퇴근 2시간: 영상/논문, 주말 3-4시간: 코드 실습 |
 | 확장 가능성 | on-device ML (TensorFlow Lite) 프로젝트로 안드로이드와 연결 |
 
----
+<br/><br/>  
 
 ## 🆕 2026년 핵심 업데이트
 
@@ -246,6 +238,6 @@ mindmap
 3. **자동화된 검증**: AI 코드를 테스트하고 평가
 4. **비용 최적화**: 언제 추론 모델, 언제 일반 모델을 쓸지 결정
 
----
+<br/><br/>  
 
 자세한 리소스와 실습 내용은 [llm-learning-roadmap.md]({{ '/llm-learning-roadmap.md' | relative_url }})를 참고하세요.

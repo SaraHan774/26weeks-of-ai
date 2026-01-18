@@ -1,13 +1,13 @@
 # Jekyll 블로그 설정
-title: 26주 LLM 학습 여정
+title: 26 Weeks of AI
 description: >-
-  Claude, Copilot 같은 LLM이 어떻게 텍스트를 이해하고 생성하는지 원리 파악하기
+  A comprehensive 26-week journey into the world of Artificial Intelligence, covering Python basics, deep learning, NLP, Transformers, and modern LLMs.
 baseurl: "/26weeks-of-ai" # GitHub Pages 사용시 /repository-name 형식
 url: "https://sarahan774.github.io" # https://username.github.io 형식
 
 # 블로그 정보
 author: Gahee
-email: your-email@example.com
+email: sarahan774@gmail.com
 
 # Jekyll 빌드 설정
 markdown: kramdown

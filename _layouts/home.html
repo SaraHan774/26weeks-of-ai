@@ -35,18 +35,20 @@ layout: default
             {% assign week_name = "week" | append: week %}
             {% assign week_posts = site[week_name] %}
             <div class="week-card">
-              <h3>Week {{ week }}</h3>
-              {% if week_posts.size > 0 %}
-                <ul class="post-list">
-                  {% for post in week_posts %}
-                    <li>
-                      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% else %}
-                <p class="no-posts">아직 작성된 글이 없습니다</p>
-              {% endif %}
+              <h3 data-week="{{ week }}">Week {{ week }}</h3>
+              <div class="week-card-content">
+                {% if week_posts.size > 0 %}
+                  <ul class="post-list">
+                    {% for post in week_posts %}
+                      <li>
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% else %}
+                  <p class="no-posts">아직 작성된 글이 없습니다</p>
+                {% endif %}
+              </div>
             </div>
           {% endfor %}
         </div>

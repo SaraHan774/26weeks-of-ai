@@ -7,7 +7,7 @@ title: Learning Resources
 
 26주 LLM 학습 여정에 필요한 모든 자료를 한 곳에 모았습니다.
 
----
+<br/><br/>
 
 ## 📚 필수 도서
 
@@ -19,7 +19,7 @@ title: Learning Resources
 | 밑바닥부터 시작하는 딥러닝 2 | 사이토 고키 | 자연어 처리와 RNN (10-14주) | [한빛미디어](https://www.hanbit.co.kr/store/books/look.php?p_code=B8950212853) |
 | 점프 투 파이썬 | 박응용 | Python 기초 (1주) | [온라인 무료](https://wikidocs.net/book/1) |
 
----
+<br/><br/>
 
 ## 🎬 영상 강의
 
@@ -71,7 +71,7 @@ title: Learning Resources
 | [LangChain for LLM Application Development](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/) | DeepLearning.AI | 25주 | RAG 시스템 구축 |
 | [Building Multi-Agent Systems](https://www.deeplearning.ai/short-courses/) | DeepLearning.AI | 24주 | Multi-Agent 시스템 |
 
----
+<br/><br/>
 
 ## 🎓 MIT OpenCourseWare (MIT OCW)
 
@@ -106,7 +106,7 @@ title: Learning Resources
 - **6.S191 Introduction to Deep Learning**: 최신 LLM 트렌드를 빠르게 파악하기 좋음. 5-9주차와 함께 학습
 - **6.861 Quantitative Methods for NLP**: Transformer 이후의 최신 기법까지 다룸. 15주차 이후 참고
 
----
+<br/><br/>
 
 ## 📝 블로그 & 아티클
 
@@ -133,7 +133,7 @@ title: Learning Resources
 | Constitutional AI | 25주 | Anthropic의 AI 정렬 방법 | [Link](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback) |
 | Claude's Character | - | Claude 개발 과정 | [Link](https://www.anthropic.com/research/claude-character) |
 
----
+<br/><br/>
 
 ## 💻 코드 저장소 & 튜토리얼
 
@@ -163,7 +163,7 @@ title: Learning Resources
 | **EasyOCR** | 14.5주 | 이미지 텍스트 추출 (멀티모달) | [GitHub](https://github.com/JaidedAI/EasyOCR) |
 | **MCP SDK** | 25주 | Model Context Protocol 서버 구축 | [Anthropic GitHub](https://github.com/anthropics/anthropic-sdk-python) |
 
----
+<br/><br/>
 
 ## 📄 핵심 논문
 
@@ -246,7 +246,7 @@ title: Learning Resources
 |:----|:----:|:----:|:-----|:-----|
 | **Model Context Protocol (MCP) 명세** | 2024 | 25주 | AI와 도구 연동 표준 | [Anthropic GitHub](https://github.com/anthropics/anthropic-sdk-python) |
 
----
+<br/><br/>
 
 ## 🌐 온라인 플랫폼
 
@@ -277,7 +277,7 @@ title: Learning Resources
 - **[LangSmith](https://www.langchain.com/langsmith)** - LLM 애플리케이션 디버깅 & 테스트
 - **[PromptLayer](https://promptlayer.com/)** - 프롬프트 버전 관리
 
----
+<br/><br/>
 
 ## 📖 추가 읽을거리
 
@@ -315,13 +315,10 @@ title: Learning Resources
 - **[AI Index Report](https://aiindex.stanford.edu/)** - Stanford AI 지표 분석
 - **[Hugging Face Papers](https://huggingface.co/papers)** - 매일 업데이트되는 최신 논문
 
----
+<br/><br/>
 
 <div style="text-align: center; margin-top: 60px; padding: 30px; background-color: #f6f8fa; border-radius: 8px;">
   <p style="font-size: 14px; color: #586069; margin: 0;">
     💡 이 리소스들은 <a href="/roadmap">26주 로드맵</a>을 따라가며 단계적으로 활용하세요.
-  </p>
-  <p style="font-size: 12px; color: #6a737d; margin-top: 12px;">
-    🆕 표시가 있는 섹션은 2026년 1월 기준 최신 AI 트렌드를 반영한 자료입니다.
   </p>
 </div>
