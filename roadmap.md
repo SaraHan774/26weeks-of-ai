@@ -117,16 +117,18 @@ graph TD
 
 ---
 
-## Phase 5: 현대 LLM의 비밀 (21-26주)
+## Phase 5: 현대 LLM과 실무 역량 (21-26주)
+
+**2026년 핵심**: AI가 코드를 짜는 시대, 개발자는 **시스템 설계자 + 검증자**로 진화
 
 | 주차 | 주제 | 목표 | 핵심 개념 | 주말 실습 |
 |:---:|:-----|:-----|:----------|:----------|
-| 21 | 스케일링의 마법 | 모델 크기와 성능의 관계 | Scaling Laws, Emergent Abilities, Chinchilla 교훈 | 모델 크기별 성능 데이터 분석 |
-| 22 | 사전학습 원리 | GPT가 인터넷을 학습하는 방법 | Next Token Prediction, 데이터 정제, BPE/SentencePiece | BPE 토크나이저 직접 구현 |
-| 23 | RLHF | ChatGPT가 다른 이유 | SFT(좋은 예시 학습), Reward Model, PPO | trl 라이브러리로 RLHF 맛보기 |
-| 24 | In-Context Learning | 프롬프트가 작동하는 원리 | Few-shot Learning, Chain-of-Thought | 동일 문제를 다양한 프롬프트로 실험 |
-| 25 | 최신 기법들 | 현재 연구 방향 파악 | Constitutional AI, RAG, 멀티모달 | LangChain으로 RAG 시스템 구축 |
-| 26 | 총정리 | 전체 여정 돌아보기 | 빈 곳 체크, 다음 방향 설정 | "내가 이해한 LLM" 블로그 포스트 |
+| 21 | Scaling Laws + AI 시스템 설계 | 모델 성능 이해 + 설계 능력 | Scaling Laws, 마이크로서비스 아키텍처 | AI가 코딩 가능한 Specification으로 설계 분해 |
+| 22 | 사전학습 + 토큰 최적화 | 학습 원리 + 비용 절감 | Next Token Prediction, BPE 알고리즘 | BPE 토크나이저 직접 구현 (한글 최적화) |
+| 23 | RLHF + DPO | 정렬 기법 이해 | SFT, Reward Model, **DPO** | trl로 RLHF + DPO 비교 실험 |
+| 24 | In-Context + Multi-Agent | 프롬프트 + 에이전트 협업 | Few-shot, Chain-of-Thought, **Multi-Agent** | LangGraph로 Multi-Agent 시스템 구축 |
+| 25 | RAG + MCP 서버 | 검색 증강 + 컨텍스트 엔지니어링 | Constitutional AI, RAG, **MCP** | MCP 서버 구축 (AI가 내 DB 읽게 하기) |
+| 26 | LLM-as-a-Judge + 총정리 | 자동화된 평가 + 회고 | **LLM-as-a-Judge**, 테스트 자동화 | AI 코드 검증 자동화 + 블로그 포스트 |
 
 ---
 
@@ -222,6 +224,27 @@ mindmap
 | 안드로이드 개발자 강점 | 디버깅 능력 → 모델 학습도 "왜 안 되지?" 찾기, 아키텍처 감각 → 레이어 구조 이해 |
 | 시간 배분 | 평일 출퇴근 2시간: 영상/논문, 주말 3-4시간: 코드 실습 |
 | 확장 가능성 | on-device ML (TensorFlow Lite) 프로젝트로 안드로이드와 연결 |
+
+---
+
+## 🆕 2026년 핵심 업데이트
+
+이 로드맵은 2026년 1월 기준 최신 AI 트렌드를 반영합니다:
+
+### 새로운 필수 개념
+- **추론 모델** (o1, DeepSeek-R1): 생각하는 시간을 갖는 모델
+- **멀티모달**: 텍스트+이미지+음성 통합 처리 (14.5주 추가)
+- **SLM 최적화**: 로컬에서 돌리는 경량 모델 (Ollama)
+- **MCP**: AI와 로컬 데이터를 연결하는 표준 프로토콜
+- **Multi-Agent**: 여러 AI 에이전트의 협업
+- **DPO**: RLHF보다 효율적인 정렬 기법
+- **LLM-as-a-Judge**: AI로 AI를 평가하는 자동화
+
+### 2026년 개발자의 핵심 역량
+1. **시스템 설계**: AI가 코딩할 수 있도록 설계 분해
+2. **컨텍스트 엔지니어링**: AI에게 어떤 정보를 줄 것인가
+3. **자동화된 검증**: AI 코드를 테스트하고 평가
+4. **비용 최적화**: 언제 추론 모델, 언제 일반 모델을 쓸지 결정
 
 ---
 

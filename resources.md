@@ -62,6 +62,15 @@ title: Learning Resources
 | [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/chapter1/1) | Hugging Face | 10-11주 | 토큰화와 임베딩 |
 | [StatQuest: RNN, LSTM, GRU](https://www.youtube.com/watch?v=AsNTP8Kwu80) | StatQuest | 12주 | 순환 신경망 설명 |
 
+### 🆕 2026년 최신 강의
+
+| 강의명 | 플랫폼/채널 | 주차 | 설명 |
+|:------|:---------|:----:|:-----|
+| [Hugging Face Multimodal Models](https://huggingface.co/learn/computer-vision-course/unit4/multimodal-models/introduction) | Hugging Face | 14.5주 | 멀티모달 모델 학습 |
+| [StatQuest: Entropy](https://www.youtube.com/watch?v=YtebGVx-Fxw) | StatQuest | 4주 | 엔트로피와 정보 이론 |
+| [LangChain for LLM Application Development](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/) | DeepLearning.AI | 25주 | RAG 시스템 구축 |
+| [Building Multi-Agent Systems](https://www.deeplearning.ai/short-courses/) | DeepLearning.AI | 24주 | Multi-Agent 시스템 |
+
 ---
 
 ## 🎓 MIT OpenCourseWare (MIT OCW)
@@ -141,9 +150,18 @@ title: Learning Resources
 | 라이브러리 | 주차 | 용도 | 링크 |
 |:----------|:----:|:-----|:-----|
 | Hugging Face Transformers | 19, 25주 | 사전학습 모델 사용 | [GitHub](https://github.com/huggingface/transformers) |
-| trl (Transformer Reinforcement Learning) | 23주 | RLHF 실습 | [GitHub](https://github.com/huggingface/trl) |
+| trl (Transformer Reinforcement Learning) | 23주 | RLHF & DPO 실습 | [GitHub](https://github.com/huggingface/trl) |
 | LangChain | 25주 | RAG 시스템 구축 | [Docs](https://docs.langchain.com/) |
 | Gensim | 11주 | Word2Vec 학습 | [Docs](https://radimrehurek.com/gensim/) |
+
+### 🆕 2026년 필수 도구
+
+| 도구 | 주차 | 용도 | 링크 |
+|:----|:----:|:-----|:-----|
+| **Ollama** | 19주 | 로컬 SLM 실행 (Llama 3, Phi-4 등) | [공식 사이트](https://ollama.ai/) |
+| **LangGraph** | 24주 | Multi-Agent 워크플로우 구축 | [Docs](https://langchain-ai.github.io/langgraph/) |
+| **EasyOCR** | 14.5주 | 이미지 텍스트 추출 (멀티모달) | [GitHub](https://github.com/JaidedAI/EasyOCR) |
+| **MCP SDK** | 25주 | Model Context Protocol 서버 구축 | [Anthropic GitHub](https://github.com/anthropics/anthropic-sdk-python) |
 
 ---
 
@@ -185,6 +203,49 @@ title: Learning Resources
 | Scaling Laws for Neural Language Models | 2020 | 21주 | OpenAI Scaling Laws | [arXiv](https://arxiv.org/abs/2001.08361) |
 | Training Compute-Optimal Large Language Models | 2022 | 21주 | Chinchilla 논문 | [arXiv](https://arxiv.org/abs/2203.15556) |
 
+### 🆕 2026년 필수 논문 & 문서
+
+#### 추론 모델 (Reasoning Models)
+
+| 논문/문서 제목 | 연도 | 주차 | 설명 | 링크 |
+|:-------------|:----:|:----:|:-----|:-----|
+| **OpenAI o1 System Card** | 2024 | 15주 | 추론 모델의 작동 원리와 평가 | [OpenAI](https://openai.com/index/openai-o1-system-card/) |
+| **DeepSeek-R1 Technical Report** | 2025 | 15주 | 오픈소스 추론 모델 | [GitHub](https://github.com/deepseek-ai/DeepSeek-R1) |
+
+#### 정렬 (Alignment)
+
+| 논문 제목 | 연도 | 주차 | 설명 | 링크 |
+|:---------|:----:|:----:|:-----|:-----|
+| **Direct Preference Optimization (DPO)** | 2023 | 20, 23주 | RLHF 대체 기법 | [arXiv](https://arxiv.org/abs/2305.18290) |
+| Constitutional AI: Harmlessness from AI Feedback | 2022 | 25주 | Anthropic의 AI 정렬 방법 | [arXiv](https://arxiv.org/abs/2212.08073) |
+
+#### RAG & 지식 증강
+
+| 논문 제목 | 연도 | 주차 | 설명 | 링크 |
+|:---------|:----:|:----:|:-----|:-----|
+| **From Local to Global: A Graph RAG Approach** | 2024 | 18주 | GraphRAG (Microsoft Research) | [arXiv](https://arxiv.org/abs/2404.16130) |
+| Retrieval-Augmented Generation for Knowledge-Intensive NLP | 2020 | 25주 | RAG 기초 논문 | [arXiv](https://arxiv.org/abs/2005.11401) |
+
+#### 멀티모달 (Multimodal)
+
+| 논문 제목 | 연도 | 주차 | 설명 | 링크 |
+|:---------|:----:|:----:|:-----|:-----|
+| **CLIP: Connecting Text and Images** | 2021 | 14.5주 | 이미지-텍스트 멀티모달 임베딩 | [arXiv](https://arxiv.org/abs/2103.00020) |
+| An Image is Worth 16x16 Words: Transformers for Image Recognition (ViT) | 2020 | 14.5주 | Vision Transformer | [arXiv](https://arxiv.org/abs/2010.11929) |
+
+#### 평가 & 검증
+
+| 논문 제목 | 연도 | 주차 | 설명 | 링크 |
+|:---------|:----:|:----:|:-----|:-----|
+| **Judging LLM-as-a-Judge** | 2023 | 26주 | AI 자동 평가 시스템 | [arXiv](https://arxiv.org/abs/2306.05685) |
+| G-Eval: NLG Evaluation using GPT-4 | 2023 | 26주 | GPT-4를 판사로 사용 | [arXiv](https://arxiv.org/abs/2303.16634) |
+
+#### 프로토콜 & 표준
+
+| 문서 | 연도 | 주차 | 설명 | 링크 |
+|:----|:----:|:----:|:-----|:-----|
+| **Model Context Protocol (MCP) 명세** | 2024 | 25주 | AI와 도구 연동 표준 | [Anthropic GitHub](https://github.com/anthropics/anthropic-sdk-python) |
+
 ---
 
 ## 🌐 온라인 플랫폼
@@ -209,6 +270,13 @@ title: Learning Resources
 - **[Kaggle Notebooks](https://www.kaggle.com/code)** - 데이터셋 + 노트북
 - **[Weights & Biases](https://wandb.ai/)** - 실험 트래킹
 
+### 🆕 2026년 필수 플랫폼
+
+- **[Ollama](https://ollama.ai/)** - 로컬 LLM 실행 플랫폼
+- **[Hugging Face Spaces](https://huggingface.co/spaces)** - AI 앱 배포 플랫폼
+- **[LangSmith](https://www.langchain.com/langsmith)** - LLM 애플리케이션 디버깅 & 테스트
+- **[PromptLayer](https://promptlayer.com/)** - 프롬프트 버전 관리
+
 ---
 
 ## 📖 추가 읽을거리
@@ -225,10 +293,35 @@ title: Learning Resources
 - **[PyTorch 한국어 튜토리얼](https://tutorials.pytorch.kr/)** - PyTorch 한글 번역
 - **[모두의 연구소](https://modulabs.co.kr/)** - AI 학습 커뮤니티
 
+### 🆕 2026년 필수 읽을거리
+
+#### 공식 블로그 & 기술 문서
+
+- **[Anthropic Research](https://www.anthropic.com/research)** - Claude & Constitutional AI 연구
+- **[OpenAI Research](https://openai.com/research)** - GPT, o1 모델 연구
+- **[DeepSeek Blog](https://www.deepseek.com/)** - 오픈소스 추론 모델
+- **[Microsoft Research Blog](https://www.microsoft.com/en-us/research/blog/)** - GraphRAG 등 최신 연구
+
+#### 실무 가이드
+
+- **[LangChain Documentation](https://python.langchain.com/)** - RAG & Multi-Agent 시스템 구축
+- **[Ollama Documentation](https://github.com/ollama/ollama/tree/main/docs)** - 로컬 LLM 운영 가이드
+- **[Hugging Face Tokenizers Guide](https://huggingface.co/docs/tokenizers/)** - 토큰화 심화
+- **[MCP Protocol Specification](https://github.com/anthropics)** - Model Context Protocol 명세
+
+#### 2026년 AI 트렌드 이해
+
+- **[State of AI Report 2025](https://www.stateof.ai/)** - 연간 AI 트렌드 리포트
+- **[AI Index Report](https://aiindex.stanford.edu/)** - Stanford AI 지표 분석
+- **[Hugging Face Papers](https://huggingface.co/papers)** - 매일 업데이트되는 최신 논문
+
 ---
 
 <div style="text-align: center; margin-top: 60px; padding: 30px; background-color: #f6f8fa; border-radius: 8px;">
   <p style="font-size: 14px; color: #586069; margin: 0;">
     💡 이 리소스들은 <a href="/roadmap">26주 로드맵</a>을 따라가며 단계적으로 활용하세요.
+  </p>
+  <p style="font-size: 12px; color: #6a737d; margin-top: 12px;">
+    🆕 표시가 있는 섹션은 2026년 1월 기준 최신 AI 트렌드를 반영한 자료입니다.
   </p>
 </div>
